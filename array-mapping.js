@@ -3,7 +3,7 @@ var input = [
   { x: 12, y: 5 },
   { x: 8, y: 15 }
 ];
-var result = input.map(function pith(nums, idx, array) {
+var result = input.map(function (nums, idx, array) {
   var ans = Math.sqrt(Math.pow(nums.x, 2) + Math.pow(nums.y, 2));
   return ans;
 });
