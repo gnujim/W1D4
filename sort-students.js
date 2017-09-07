@@ -6,14 +6,19 @@ var students = [
 ];
 
 students.sort(function (a, b) {
-  if (a.name < b.name) {
-    return -1;
-  } else if (a.name > b.name) {
-    return 1;
-  } else {
-    return b.age - a.age;
-  }
+  // if (a.name < b.name) {
+  //   return -1;
+  // } else if (a.name > b.name) {
+  //   return 1;
+  // } else {
+  //   return b.age - a.age;
+  // }
 
+  if (a.name === b.name) {
+    return b.age - a.age;
+  } else {
+    return a.name.localeCompare(b.name);
+  }
 });
 
 console.log(students);
