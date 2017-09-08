@@ -5,7 +5,7 @@ var students = [
   { id: 4, name: "alex", age: 30 }
 ];
 
-students.sort(function (a, b) {
+students.sort(function(a, b) {
   // if (a.name < b.name) {
   //   return -1;
   // } else if (a.name > b.name) {
